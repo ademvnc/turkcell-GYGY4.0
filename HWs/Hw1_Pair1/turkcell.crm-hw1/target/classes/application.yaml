@@ -2,7 +2,7 @@ spring:
   application:
     name: spring-starter
   datasource:
-    url: "jdbc:postgresql://localhost:5433/crm"
+    url: "jdbc:postgresql://localhost:5432/crm"
     username: postgres
     password: test
   jpa:
@@ -11,6 +11,6 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     showSql: true
     hibernate:
-      ddlAuto: validate
+      ddlAuto: update
 server:
   port: 8080
